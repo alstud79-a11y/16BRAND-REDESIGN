@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="16BRAND Renewal Project" />
+    <title>16BRAND Renewal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <aside class="top-banner">
+      <p>회원가입 시 2,000원 할인쿠폰 즉시지급!!</p>
+    </aside>
+
+    <header class="header">
+      <div class="header-inner">
+        <h1 class="logo">
+          <a href="#top"><img src="./images/logo.png" alt="16BRAND" /></a>
+        </h1>
+
+        <nav class="gnb" aria-label="주요 메뉴">
+          <ul>
+            <li><a href="#best">BEST</a></li>
+            <li><a href="#collection">COLLECTION</a></li>
+            <li><a href="#issue">ISSUE</a></li>
+            <li><a href="#story">STORY</a></li>
+          </ul>
+        </nav>
+
+        <nav class="util-menu" aria-label="유틸 메뉴">
+          <ul>
+            <li><a href="./login.html">LOGIN</a></li>
+            <li><a href="./join.html">JOIN</a></li>
+            <li><a href="./login.html">MYPAGE</a></li>
+            <li><a href="./cart.html">CART</a></li>
+          </ul>
+        </nav>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="모바일 메뉴 열기"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <nav class="mobile-menu" aria-hidden="true">
+        <a href="#best">BEST</a>
+        <a href="#collection">COLLECTION</a>
+        <a href="#issue">ISSUE</a>
+        <a href="#story">STORY</a>
+        <div class="mobile-util">
+          <a href="./login.html">LOGIN</a><a href="./join.html">JOIN</a
+          ><a href="./login.html">MYPAGE</a><a href="./cart.html">CART</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-label="16브랜드 메인 비주얼">
+        <div class="hero-slide">
+          <video
+            src="./video/main_final.mp4"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="auto"
+            aria-label="16브랜드 메인 비주얼 영상"
+            class="hero-video"
+          ></video>
+        </div>
+        <div class="hero-shade"></div>
+
+        <div class="hero-content">
+          <h2 class="hero-copy-title">
+            <strong class="hero-line">COLOR YOUR MOMENT</strong>
+            <span class="hero-line">오늘의 나를 완성하는 컬러</span>
+          </h2>
+          <a href="#best" class="btn-primary hero-line"
+            >DISCOVER MORE <b>→</b></a
+          >
+        </div>
+
+        <span class="hero-scroll"></span>
+      </section>
+
+      <section id="best" class="best-product section-block">
+        <div class="inner">
+          <div class="section-title reveal">
+            <span class="section-eyebrow">16BRAND BEST SELLER</span>
+            <h2>BEST PRODUCT</h2>
+            <p>매일의 메이크업을 더 쉽고 즐겁게 만드는 아이템</p>
+          </div>
+
+          <div class="product-grid">
+            <article
+              class="product-card reveal"
+              style="--delay: 0.05s"
+              data-product="fruit"
+            >
+              <div class="product-image-wrap">
+                <span class="makeup-color-aura" aria-hidden="true"></span>
+                <img src="./images/product1.png" alt="16브랜드 프루트 틴트" />
+                <div class="product-overlay"><span>SHOP NOW →</span></div>
+              </div>
+              <span class="product-number">01</span>
+              <h3>FRUIT TINT</h3>
+              <p>생기 있는 컬러감</p>
+            </article>
+
+            <article
+              class="product-card reveal"
+              style="--delay: 0.18s"
+              data-product="eye"
+            >
+              <div class="product-image-wrap">
+                <span class="makeup-color-aura" aria-hidden="true"></span>
+                <img src="./images/product2.png" alt="16브랜드 아이 팔레트" />
+                <div class="product-overlay"><span>SHOP NOW →</span></div>
+              </div>
+              <span class="product-number">02</span>
+              <h3>EYE PALETTE</h3>
+              <p>데일리 음영 메이크업</p>
+            </article>
+
+            <article
+              class="product-card reveal"
+              style="--delay: 0.31s"
+              data-product="blusher"
+            >
+              <div class="product-image-wrap">
+                <span class="makeup-color-aura" aria-hidden="true"></span>
+                <img src="./images/product3.png" alt="16브랜드 블러셔" />
+                <div class="product-overlay"><span>SHOP NOW →</span></div>
+              </div>
+              <span class="product-number">03</span>
+              <h3>BLUSHER</h3>
+              <p>내추럴 치크 컬러</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="collection" class="collection">
+        <span class="collection-light" aria-hidden="true"></span>
+        <div class="collection-content reveal">
+          <span class="collection-label">NEW COLLECTION</span>
+          <h2>
+            <span class="collection-word from-left">SPRING</span
+            ><span class="collection-word from-right">MAKEUP</span>
+          </h2>
+          <p>새로운 시즌, 나만의 컬러를 만나보세요.</p>
+          <a href="#issue" class="collection-link"
+            >DISCOVER MORE <span>→</span></a
+          >
+        </div>
+      </section>
+
+      <section id="issue" class="issue section-block">
+        <div class="inner">
+          <div class="section-title reveal">
+            <span class="section-eyebrow">BEAUTY MAGAZINE</span>
+            <h2>BEAUTY ISSUE</h2>
+            <p>16BRAND의 다양한 뷰티 소식을 만나보세요</p>
+          </div>
+
+          <div class="issue-grid">
+            <article
+              class="issue-card large reveal"
+              style="
+                --delay: 0.05s;
+                background-image: url('./images/new product.jpeg');
+              "
+            >
+              <div class="issue-info">
+                <span>NEW PRODUCT</span>
+                <h3>WATER GLOW LOOK</h3>
+                <b>VIEW STORY →</b>
+              </div>
+            </article>
+            <article
+              class="issue-card reveal"
+              style="
+                --delay: 0.12s;
+                background-image: url('./images/eye_makeup.png');
+              "
+            >
+              <div class="issue-info">
+                <span>BEAUTY TIP</span>
+                <h3>DAILY EYE MAKEUP</h3>
+                <b>READ MORE →</b>
+              </div>
+            </article>
+            <article
+              class="issue-card reveal"
+              style="
+                --delay: 0.19s;
+                background-image: url('./images/review.png');
+              "
+            >
+              <div class="issue-info">
+                <span>REVIEW</span>
+                <h3>REAL COLOR TEST</h3>
+                <b>READ MORE →</b>
+              </div>
+            </article>
+            <article
+              class="issue-card reveal"
+              style="
+                --delay: 0.26s;
+                background-image: url('./images/cosmetic.png');
+              "
+            >
+              <div class="issue-info">
+                <span>EVENT</span>
+                <h3>PINK BEAUTY DAY</h3>
+                <b>JOIN NOW →</b>
+              </div>
+            </article>
+            <article
+              class="issue-card reveal"
+              style="
+                --delay: 0.33s;
+                background-image: url('./images/perfume.png');
+              "
+            >
+              <div class="issue-info">
+                <span>Q&amp;A</span>
+                <h3>MAKEUP GUIDE</h3>
+                <b>READ MORE →</b>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="story" class="brand-story">
+        <div class="story-watermark" aria-hidden="true">16BRAND</div>
+        <div class="story-wrap reveal">
+          <div class="story-text">
+            <span class="story-label">16BRAND STORY</span>
+            <h2 class="story-title">
+              <span><em>EASY &amp;</em></span>
+              <span><em>FUN</em></span>
+              <span><em>MAKEUP</em></span>
+            </h2>
+            <p>
+              누구나 쉽고 재미있게 사용할 수 있는<br />메이크업을 연구합니다.
+            </p>
+
+            <button class="btn-dark" id="openVideo" type="button">
+              WATCH FILM →
+            </button>
+          </div>
+
+          <div class="story-image-box">
+            <div class="story-circle story-circle-large"></div>
+            <span class="story-spark spark-1"></span
+            ><span class="story-spark spark-2"></span
+            ><span class="story-spark spark-3"></span>
+            <img
+              src="./images/story_product1.png"
+              alt="16브랜드 메이크업 제품"
+              class="story-product-image"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="logo-wrap">
+          <img src="./images/logo2.png" alt="16BRAND" />
+        </div>
+        <div class="info-wrap">
+          <nav class="footer-menu">
+            <ul>
+              <li><a href="#top">HOME</a></li>
+              <li><a href="#">COMPANY</a></li>
+              <li><a href="#">AGREEMENT</a></li>
+              <li><a href="#">PRIVACY POLICY</a></li>
+              <li><a href="#">GUIDE</a></li>
+            </ul>
+          </nav>
+          <address class="company-details">
+            <p>16BRAND WEBSITE REDESIGN PROJECT</p>
+            <p>UI/UX DESIGN · WEB DESIGN · INTERACTIVE WEB</p>
+          </address>
+
+          <p class="copyright">
+            © 2026 16BRAND WEBSITE REDESIGN · PORTFOLIO PROJECT
+          </p>
+        </div>
+        <div class="right-wrap">
+          <div class="sns-icons">
+            <a
+              href="https://www.facebook.com/16brand"
+              target="_blank"
+              rel="noreferrer"
+              ><img src="./images/fb.png" alt="Facebook"
+            /></a>
+            <a
+              href="https://www.instagram.com/16brand_official/"
+              target="_blank"
+              rel="noreferrer"
+              ><img src="./images/insta.png" alt="Instagram"
+            /></a>
+            <a href="https://blog.naver.com/" target="_blank" rel="noreferrer"
+              ><img src="./images/blog.png" alt="Blog"
+            /></a>
+            <a href="https://www.youtube.com/" target="_blank" rel="noreferrer"
+              ><img src="./images/yoto.png" alt="YouTube"
+            /></a>
+          </div>
+          <select class="family-site" aria-label="패밀리 사이트">
+            <option>FAMILY SITE</option>
+            <option>CSA COSMIC</option>
+          </select>
+        </div>
+      </div>
+    </footer>
+
+    <button class="top-btn" type="button" aria-label="맨 위로 이동">TOP</button>
+
+    <!-- Brand Story Video Modal -->
+    <div
+      class="video-modal"
+      id="videoModal"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="videoTitle"
+      aria-hidden="true"
+    >
+      <div class="video-modal-backdrop" data-video-close></div>
+      <div class="video-modal-content">
+        <h2 class="sr-only" id="videoTitle">16BRAND 브랜드 필름</h2>
+        <button
+          class="video-close"
+          type="button"
+          aria-label="영상 닫기"
+          data-video-close
+        >
+          ×
+        </button>
+        <video id="brandVideo" controls playsinline preload="metadata">
+          <source src="./video/16brand_intro_playable.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CART | 16BRAND</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body class="subpage-body">
+  <aside class="top-banner"><p>회원가입 시 2,000원 할인쿠폰 즉시지급!!</p></aside>
+  <header class="header subpage-header">
+    <div class="header-inner">
+      <h1 class="logo"><a href="./index.html"><img src="./images/logo.png" alt="16BRAND" /></a></h1>
+      <nav class="gnb" aria-label="주요 메뉴">
+        <ul>
+          <li><a href="./index.html#best">BEST</a></li>
+          <li><a href="./index.html#collection">COLLECTION</a></li>
+          <li><a href="./index.html#issue">ISSUE</a></li>
+          <li><a href="./index.html#story">STORY</a></li>
+        </ul>
+      </nav>
+      <nav class="util-menu" aria-label="유틸 메뉴">
+        <ul>
+          <li><a href="./login.html">LOGIN</a></li>
+          <li><a href="./join.html">JOIN</a></li>
+          <li><a href="./cart.html">CART</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="cart-shell">
+    <span class="product-kicker">SHOPPING BAG</span>
+    <h1 class="cart-title">YOUR CART</h1>
+    <section id="cartList"></section>
+    <aside class="cart-summary" id="cartSummary" hidden>
+      <div><span>상품금액</span><strong id="subtotal">₩0</strong></div>
+      <div><span>배송비</span><strong>FREE</strong></div>
+      <div class="total"><span>TOTAL</span><strong id="totalPrice">₩0</strong></div>
+      <button class="shop-primary" type="button" id="checkout">CHECK OUT</button>
+    </aside>
+  </main>
+  <script src="./js/shop.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PRODUCT | 16BRAND</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body class="product-page">
+  <aside class="top-banner"><p>회원가입 시 2,000원 할인쿠폰 즉시지급!!</p></aside>
+  <header class="header subpage-header">
+    <div class="header-inner">
+      <h1 class="logo"><a href="./index.html"><img src="./images/logo.png" alt="16BRAND" /></a></h1>
+      <nav class="gnb" aria-label="주요 메뉴">
+        <ul>
+          <li><a href="./index.html#best">BEST</a></li>
+          <li><a href="./index.html#collection">COLLECTION</a></li>
+          <li><a href="./index.html#issue">ISSUE</a></li>
+          <li><a href="./index.html#story">STORY</a></li>
+        </ul>
+      </nav>
+      <nav class="util-menu" aria-label="유틸 메뉴">
+        <ul>
+          <li><a href="./login.html">LOGIN</a></li>
+          <li><a href="./join.html">JOIN</a></li>
+          <li><a href="./cart.html">CART</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="product-detail">
+    <p class="product-breadcrumb">HOME / BEST PRODUCT / <span id="breadcrumbName">PRODUCT</span></p>
+    <section class="product-layout">
+      <div class="product-gallery">
+        <div class="product-thumbs" id="productThumbs"></div>
+        <div class="product-main-image"><img id="productImage" src="./images/product1.png" alt="16브랜드 제품" /></div>
+      </div>
+
+      <div class="product-info">
+        <span class="product-kicker">16BRAND BEST SELLER</span>
+        <h1 id="productName">FRUIT TINT</h1>
+        <p class="product-subtitle" id="productSubtitle">생기 있는 컬러감으로 완성하는 데일리 립</p>
+        <div class="product-rating"><span>★★★★★</span><span>4.9 · REVIEW 128</span></div>
+        <p class="product-price" id="productPrice">₩18,000</p>
+
+        <div class="option-group">
+          <div class="option-label"><span>COLOR</span><span id="selectedColor">01 PINK GUAVA</span></div>
+          <div class="color-options" id="colorOptions"></div>
+        </div>
+
+        <div class="option-group">
+          <div class="option-label"><span>QUANTITY</span></div>
+          <div class="quantity-control">
+            <button type="button" id="qtyMinus" aria-label="수량 줄이기">−</button>
+            <output id="quantity">1</output>
+            <button type="button" id="qtyPlus" aria-label="수량 늘리기">+</button>
+          </div>
+        </div>
+
+        <div class="product-actions">
+          <button type="button" class="shop-secondary" id="addCart">ADD TO CART</button>
+          <button type="button" class="shop-primary" id="buyNow">BUY NOW</button>
+        </div>
+        <p class="form-message" id="productMessage" aria-live="polite"></p>
+        <div class="product-delivery">무료배송 · 오후 2시 이전 주문 시 당일 출고 · 단순 변심 교환/반품 가능</div>
+      </div>
+    </section>
+</main>
+  <script src="./js/shop.js"></script>
+</body>
+</html>

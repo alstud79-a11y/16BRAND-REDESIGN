@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LOGIN | 16BRAND</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body class="subpage-body">
+  <aside class="top-banner"><p>회원가입 시 2,000원 할인쿠폰 즉시지급!!</p></aside>
+  <header class="header subpage-header">
+    <div class="header-inner">
+      <h1 class="logo"><a href="./index.html"><img src="./images/logo.png" alt="16BRAND" /></a></h1>
+      <nav class="gnb" aria-label="주요 메뉴">
+        <ul>
+          <li><a href="./index.html#best">BEST</a></li>
+          <li><a href="./index.html#collection">COLLECTION</a></li>
+          <li><a href="./index.html#issue">ISSUE</a></li>
+          <li><a href="./index.html#story">STORY</a></li>
+        </ul>
+      </nav>
+      <nav class="util-menu" aria-label="유틸 메뉴">
+        <ul>
+          <li><a href="./login.html">LOGIN</a></li>
+          <li><a href="./join.html">JOIN</a></li>
+          <li><a href="./cart.html">CART</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="subpage-main">
+    <section class="auth-shell">
+      <div class="auth-panel">
+        <div class="auth-heading">
+          <small>MEMBER LOGIN</small>
+          <h1>LOGIN</h1>
+          <p>포트폴리오 데모용 로그인 화면입니다.</p>
+        </div>
+
+        <form class="auth-form" id="loginForm" novalidate>
+          <div class="field">
+            <label for="loginEmail">이메일</label>
+            <input id="loginEmail" type="email" placeholder="example@email.com" autocomplete="email" required />
+          </div>
+          <div class="field">
+            <label for="loginPassword">비밀번호</label>
+            <input id="loginPassword" type="password" placeholder="비밀번호를 입력하세요" autocomplete="current-password" required />
+          </div>
+          <div class="form-check-row">
+            <label><input type="checkbox" /> 로그인 상태 유지</label>
+            <a href="#">아이디·비밀번호 찾기</a>
+          </div>
+          <button class="auth-submit" type="submit">LOGIN</button>
+          <p class="form-message" id="loginMessage" aria-live="polite"></p>
+        </form>
+        <p class="auth-links">아직 회원이 아니신가요? <a href="./join.html">회원가입</a></p>
+      </div>
+    </section>
+  </main>
+  <script src="./js/shop.js"></script>
+</body>
+</html>

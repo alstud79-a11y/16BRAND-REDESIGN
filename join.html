@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JOIN | 16BRAND</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800;900&family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body class="subpage-body">
+  <aside class="top-banner"><p>회원가입 시 2,000원 할인쿠폰 즉시지급!!</p></aside>
+  <header class="header subpage-header">
+    <div class="header-inner">
+      <h1 class="logo"><a href="./index.html"><img src="./images/logo.png" alt="16BRAND" /></a></h1>
+      <nav class="gnb" aria-label="주요 메뉴">
+        <ul>
+          <li><a href="./index.html#best">BEST</a></li>
+          <li><a href="./index.html#collection">COLLECTION</a></li>
+          <li><a href="./index.html#issue">ISSUE</a></li>
+          <li><a href="./index.html#story">STORY</a></li>
+        </ul>
+      </nav>
+      <nav class="util-menu" aria-label="유틸 메뉴">
+        <ul>
+          <li><a href="./login.html">LOGIN</a></li>
+          <li><a href="./join.html">JOIN</a></li>
+          <li><a href="./cart.html">CART</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="subpage-main">
+    <section class="auth-shell">
+      <div class="auth-panel">
+        <div class="auth-heading">
+          <small>CREATE ACCOUNT</small>
+          <h1>JOIN</h1>
+          <p>필수 정보를 입력해 회원가입을 완료해주세요.</p>
+        </div>
+
+        <form class="auth-form" id="joinForm" novalidate>
+          <div class="field-row">
+            <div class="field">
+              <label for="joinName">이름</label>
+              <input id="joinName" type="text" placeholder="이름" required />
+            </div>
+            <div class="field">
+              <label for="joinPhone">휴대폰</label>
+              <input id="joinPhone" type="tel" placeholder="010-0000-0000" required />
+            </div>
+          </div>
+          <div class="field">
+            <label for="joinEmail">이메일</label>
+            <input id="joinEmail" type="email" placeholder="example@email.com" required />
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="joinPassword">비밀번호</label>
+              <input id="joinPassword" type="password" placeholder="8자 이상" minlength="8" required />
+            </div>
+            <div class="field">
+              <label for="joinPasswordConfirm">비밀번호 확인</label>
+              <input id="joinPasswordConfirm" type="password" placeholder="비밀번호 재입력" minlength="8" required />
+            </div>
+          </div>
+          <div class="terms-list">
+            <label><input id="allTerms" type="checkbox" /> 전체 약관에 동의합니다.</label>
+            <label><input class="required-term" type="checkbox" /> [필수] 이용약관 동의</label>
+            <label><input class="required-term" type="checkbox" /> [필수] 개인정보 처리방침 동의</label>
+            <label><input type="checkbox" /> [선택] 마케팅 정보 수신 동의</label>
+          </div>
+          <button class="auth-submit" type="submit">CREATE ACCOUNT</button>
+          <p class="form-message" id="joinMessage" aria-live="polite"></p>
+        </form>
+        <p class="auth-links">이미 회원이신가요? <a href="./login.html">로그인</a></p>
+      </div>
+    </section>
+  </main>
+  <script src="./js/shop.js"></script>
+</body>
+</html>
